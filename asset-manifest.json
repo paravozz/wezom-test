@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wezom-test/static/css/main.a0064841.chunk.css",
+    "main.js": "/wezom-test/static/js/main.f26e4ba5.chunk.js",
+    "runtime-main.js": "/wezom-test/static/js/runtime-main.75376a96.js",
+    "static/css/2.5c600ed6.chunk.css": "/wezom-test/static/css/2.5c600ed6.chunk.css",
+    "static/js/2.97e93fe4.chunk.js": "/wezom-test/static/js/2.97e93fe4.chunk.js",
+    "index.html": "/wezom-test/index.html",
+    "precache-manifest.b3909b0766dc4f7fd12cdc9b925cb314.js": "/wezom-test/precache-manifest.b3909b0766dc4f7fd12cdc9b925cb314.js",
+    "service-worker.js": "/wezom-test/service-worker.js",
+    "static/js/2.97e93fe4.chunk.js.LICENSE.txt": "/wezom-test/static/js/2.97e93fe4.chunk.js.LICENSE.txt",
+    "static/media/backdrop.jpg": "/wezom-test/static/media/backdrop.f7eab148.jpg",
+    "static/media/react-logo.svg": "/wezom-test/static/media/react-logo.ee7cd8ed.svg",
+    "static/media/wezom-logo.svg": "/wezom-test/static/media/wezom-logo.324b96ae.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75376a96.js",
+    "static/css/2.5c600ed6.chunk.css",
+    "static/js/2.97e93fe4.chunk.js",
+    "static/css/main.a0064841.chunk.css",
+    "static/js/main.f26e4ba5.chunk.js"
+  ]
+}
