@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/wezom-test/static/css/main.a0064841.chunk.css",
-    "main.js": "/wezom-test/static/js/main.f26e4ba5.chunk.js",
+    "main.js": "/wezom-test/static/js/main.f790e913.chunk.js",
     "runtime-main.js": "/wezom-test/static/js/runtime-main.75376a96.js",
     "static/css/2.5c600ed6.chunk.css": "/wezom-test/static/css/2.5c600ed6.chunk.css",
     "static/js/2.97e93fe4.chunk.js": "/wezom-test/static/js/2.97e93fe4.chunk.js",
     "index.html": "/wezom-test/index.html",
-    "precache-manifest.b3909b0766dc4f7fd12cdc9b925cb314.js": "/wezom-test/precache-manifest.b3909b0766dc4f7fd12cdc9b925cb314.js",
+    "precache-manifest.c081e06ed66d8f05d62bac71a5945368.js": "/wezom-test/precache-manifest.c081e06ed66d8f05d62bac71a5945368.js",
     "service-worker.js": "/wezom-test/service-worker.js",
     "static/js/2.97e93fe4.chunk.js.LICENSE.txt": "/wezom-test/static/js/2.97e93fe4.chunk.js.LICENSE.txt",
     "static/media/backdrop.jpg": "/wezom-test/static/media/backdrop.f7eab148.jpg",
@@ -18,6 +18,6 @@
     "static/css/2.5c600ed6.chunk.css",
     "static/js/2.97e93fe4.chunk.js",
     "static/css/main.a0064841.chunk.css",
-    "static/js/main.f26e4ba5.chunk.js"
+    "static/js/main.f790e913.chunk.js"
   ]
 }
