@@ -1,0 +1,1 @@
+export { FiltersForContacts } from './container';

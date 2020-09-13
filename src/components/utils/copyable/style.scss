@@ -1,0 +1,10 @@
+.copyable--container {
+	display: flex;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+
+	.anticon {
+		margin-right: 8px;
+		margin-top: 4px;
+	}
+}

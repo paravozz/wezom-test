@@ -1,0 +1,1 @@
+export { TiledContacts } from './container';

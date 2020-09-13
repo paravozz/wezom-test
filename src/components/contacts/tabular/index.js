@@ -1,0 +1,1 @@
+export { TabularContacts } from './container';

@@ -1,0 +1,77 @@
+.page {
+	$this: &;
+
+	flex: auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+
+	&__head {
+		position: relative;
+		display: block;
+		margin: 0 0 20px;
+		padding: 0;
+	}
+
+	&__body {
+		flex: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--home {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.react-logo {
+			width: 100%;
+			max-width: 300px;
+
+			@media (prefers-reduced-motion: no-preference) {
+				animation: react-logo-spin infinite 20s linear;
+			}
+		}
+	}
+
+	&--contacts {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.ant-row {
+			width: 100%;
+		}
+
+		.ant-radio-group {
+			margin-left: 10px;
+		}
+
+		.ant-table-content {
+			width: 100%;
+		}
+
+		.ant-card-cover img {
+			height: 240px;
+			object-fit: cover;
+		}
+
+		.box {
+			display: flex;
+			flex-flow: column nowrap;
+
+			padding: 42px 24px 50px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+
+			width: 100%;
+
+			background-color: $color-box-background;
+
+			border-radius: 2px;
+			border: 1px solid $color-border;
+		}
+	}
+}
