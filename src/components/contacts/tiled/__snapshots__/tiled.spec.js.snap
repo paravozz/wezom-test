@@ -1,0 +1,496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TiledContacts should render without crashing 1`] = `
+<div
+  class="ant-row"
+  style="margin-left:-4px;margin-right:-4px;margin-top:-4px;margin-bottom:4px"
+>
+  <div
+    style="width:33.3333%;max-width:33.3333%"
+  >
+    <div
+      class="ant-col"
+      style="padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px"
+    >
+      <div
+        class="ant-card ant-card-bordered ant-card-hoverable"
+      >
+        <div
+          class="ant-card-cover"
+        >
+          <img
+            alt="contact-cover"
+            src="https://randomuser.me/api/portraits/women/42.jpg"
+          />
+        </div>
+        <div
+          class="ant-card-body"
+        >
+          <div
+            class="ant-card-meta"
+          >
+            <div
+              class="ant-card-meta-detail"
+            >
+              <div
+                class="ant-card-meta-title"
+              >
+                <span
+                  class="ant-typography"
+                >
+                  <span
+                    class="ant-typography"
+                  />
+                   
+                  <span
+                    class="ant-typography ant-typography-secondary"
+                  >
+                    (43 years)
+                  </span>
+                </span>
+              </div>
+              <div
+                class="ant-card-meta-description"
+              >
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="mailto:hazel.chen@example.com"
+                  >
+                    hazel.chen@example.com
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="tel:(779)-242-0785"
+                  >
+                    (779)-242-0785
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="ant-typography ant-typography-ellipsis"
+                  >
+                    <strong>
+                      /New Zealand/
+                    </strong>
+                    <br />
+                    6257, Esmonde RoadTimaru, Wellington 27976
+                  </div>
+                </div>
+                <div
+                  class="ant-divider ant-divider-horizontal"
+                  role="separator"
+                />
+                <span
+                  class="ant-tag ant-tag-has-color"
+                  style="background-color:#9e1068"
+                >
+                  New Zealander
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style="width:33.3333%;max-width:33.3333%"
+  >
+    <div
+      class="ant-col"
+      style="padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px"
+    >
+      <div
+        class="ant-card ant-card-bordered ant-card-hoverable"
+      >
+        <div
+          class="ant-card-cover"
+        >
+          <img
+            alt="contact-cover"
+            src="https://randomuser.me/api/portraits/men/7.jpg"
+          />
+        </div>
+        <div
+          class="ant-card-body"
+        >
+          <div
+            class="ant-card-meta"
+          >
+            <div
+              class="ant-card-meta-detail"
+            >
+              <div
+                class="ant-card-meta-title"
+              >
+                <span
+                  class="ant-typography"
+                >
+                  <span
+                    class="ant-typography"
+                  />
+                   
+                  <span
+                    class="ant-typography ant-typography-secondary"
+                  >
+                    (62 years)
+                  </span>
+                </span>
+              </div>
+              <div
+                class="ant-card-meta-description"
+              >
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="mailto:troy.lucas@example.com"
+                  >
+                    troy.lucas@example.com
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="tel:07-3482-4477"
+                  >
+                    07-3482-4477
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="ant-typography ant-typography-ellipsis"
+                  >
+                    <strong>
+                      /Australia/
+                    </strong>
+                    <br />
+                    5314, Poplar DrHobart, South Australia 2836
+                  </div>
+                </div>
+                <div
+                  class="ant-divider ant-divider-horizontal"
+                  role="separator"
+                />
+                <span
+                  class="ant-tag ant-tag-magenta"
+                >
+                  Australian
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style="width:33.3333%;max-width:33.3333%"
+  >
+    <div
+      class="ant-col"
+      style="padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px"
+    >
+      <div
+        class="ant-card ant-card-bordered ant-card-hoverable"
+      >
+        <div
+          class="ant-card-cover"
+        >
+          <img
+            alt="contact-cover"
+            src="https://randomuser.me/api/portraits/women/86.jpg"
+          />
+        </div>
+        <div
+          class="ant-card-body"
+        >
+          <div
+            class="ant-card-meta"
+          >
+            <div
+              class="ant-card-meta-detail"
+            >
+              <div
+                class="ant-card-meta-title"
+              >
+                <span
+                  class="ant-typography"
+                >
+                  <span
+                    class="ant-typography"
+                  />
+                   
+                  <span
+                    class="ant-typography ant-typography-secondary"
+                  >
+                    (52 years)
+                  </span>
+                </span>
+              </div>
+              <div
+                class="ant-card-meta-description"
+              >
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="mailto:angela.henry@example.com"
+                  >
+                    angela.henry@example.com
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    class="ant-typography ant-typography-ellipsis"
+                    href="tel:0131 413 2855"
+                  >
+                    0131 413 2855
+                  </a>
+                </div>
+                <div
+                  class="copyable--container"
+                >
+                  <span
+                    aria-label="copy"
+                    class="anticon anticon-copy"
+                    role="img"
+                    style="color:#1890ff"
+                    tabindex="-1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="copy"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="ant-typography ant-typography-ellipsis"
+                  >
+                    <strong>
+                      /United Kingdom/
+                    </strong>
+                    <br />
+                    6473, Park LaneYork, West Midlands M86 0DJ
+                  </div>
+                </div>
+                <div
+                  class="ant-divider ant-divider-horizontal"
+                  role="separator"
+                />
+                <span
+                  class="ant-tag ant-tag-geekblue"
+                >
+                  British
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

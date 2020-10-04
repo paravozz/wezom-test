@@ -19,5 +19,6 @@ export { CountryData } from './countries';
 export {
 	getFullName,
 	getGenderName,
+	mapGenderToItsName,
 	paginateCollection
 } from './contacts';

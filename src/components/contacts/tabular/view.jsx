@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Typography, Tag, Avatar } from 'antd';
+import { Table, Typography, Tag, Avatar, Empty } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import { CountryData, getFullName } from 'utils';
@@ -8,6 +8,14 @@ import { Copyable } from 'components/utils';
 
 const View = (props) => {
 	const { contacts, loading } = props;
+
+	if (!contacts) {
+		return (
+			<>
+				<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+			</>
+		)
+	}
 
 	function renderFullName({ title, first, last }) {
 		return getFullName(title, first, last);
@@ -78,7 +86,6 @@ const View = (props) => {
 
 	const dataSource = (
 		contacts
-		// paginateCollection(contacts, pagination.offset, pagination.limit)
 			.map((contact, index) => ({
 				key: index,
 				avatar: renderAvatar(contact.picture.thumbnail),

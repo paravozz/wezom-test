@@ -37,7 +37,7 @@ export function countNationalities(contacts) {
 		if (Object.keys(results).includes(contact.nat)) {
 			results[contact.nat] += 1;
 		} else {
-			results[contact.nat] = 0;
+			results[contact.nat] = 1;
 		}
 	}
 

@@ -11,7 +11,7 @@ import {
 const View = (props) => {
 	const { contacts, loading } = props;
 
-	if (loading) {
+	if (!contacts?.length || loading) {
 		return (
 			<Row className="box" />
 		);

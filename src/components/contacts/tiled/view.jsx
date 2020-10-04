@@ -7,7 +7,7 @@ import { Copyable } from 'components/utils';
 const View = (props) => {
 	const { contacts, loading, pagination } = props;
 
-	if (!contacts.length || loading) {
+	if (!contacts?.length || loading) {
 		return (
 			<>
 				{loading && <Spin />}
@@ -78,18 +78,19 @@ const View = (props) => {
 	}
 
 	const _contacts = (
-		paginateCollection(contacts, pagination.offset, pagination.limit)
-			.map((contact, index) => ({
-				key: index,
-				avatar: renderAvatar(contact.picture.large),
-				fullName: renderFullName(contact.name),
-				birthday: renderBirthday(contact.dob),
-				email: renderEmail(contact.email),
-				phone: renderPhone(contact.phone),
-				location: renderLocation(contact.location),
-				nationality: renderNationality(contact.nat),
-			}))
-	);
+		pagination
+			? paginateCollection(contacts, pagination.offset, pagination.limit)
+			: contacts
+	).map((contact, index) => ({
+		key: index,
+		avatar: renderAvatar(contact.picture.large),
+		fullName: renderFullName(contact.name),
+		birthday: renderBirthday(contact.dob),
+		email: renderEmail(contact.email),
+		phone: renderPhone(contact.phone),
+		location: renderLocation(contact.location),
+		nationality: renderNationality(contact.nat),
+	}));
 
 	return (
 		<Row gutter={[8, 8]}>

@@ -2,7 +2,7 @@ export function getFullName(title, first, last) {
 	return `${title} ${first} ${last}`;
 }
 
-const mapGenderToItsName = {
+export const mapGenderToItsName = {
 	male: 'Men',
 	female: 'Women',
 	indeterminate: 'Indeterminate',
