@@ -39,7 +39,8 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "dev-server": "node server.js --watch db.json",
-    "test-with-dev-server": "concurrently \"npm:dev-server\" \"npm:test\""
+    "test-with-dev-server": "concurrently \"npm:dev-server\" \"npm:test\"",
+    "test-with-dev-server:watch": "concurrently \"npm:dev-server\" \"npm:test -- --coverage --watchAll\""
   },
   "eslintConfig": {
     "extends": "react-app"
