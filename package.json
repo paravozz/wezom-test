@@ -26,6 +26,7 @@
     "reselect": "^4.0.0"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
@@ -37,7 +38,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "dev-server": "node server.js --watch db.json"
+    "dev-server": "node server.js --watch db.json",
+    "test-with-dev-server": "concurrently \"npm:dev-server\" \"npm:test\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,7 +56,7 @@
       "last 1 safari version"
     ]
   },
-	"jest": {
+  "jest": {
     "clearMocks": true,
     "snapshotSerializers": [
       "./node_modules/enzyme-to-json/serializer"
