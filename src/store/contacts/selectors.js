@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 import { getFullName } from '../../utils';
 
-const contactsSelector = state => state.contacts.contacts;
+export const contactsSelector = state => state.contacts.contacts;
 export const totalCountSelector = state => state.contacts.totalCount;
 export const loadingSelector = state => state.contacts.loading;
 export const filtersSelector = state => state.contacts.filters;

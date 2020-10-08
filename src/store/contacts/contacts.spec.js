@@ -2,6 +2,8 @@
 import { runSaga } from 'redux-saga';
 import { takeLatest } from 'redux-saga/effects';
 import { notification } from 'antd';
+import { Api } from 'services';
+
 import {
 	fetchContacts,
 	contactsWatcher,
@@ -16,8 +18,15 @@ import {
 	filterContacts as filterContactsAction,
 	setPagination as setPaginationAction,
 } from './actions';
-import { Api } from 'services';
 import { initialState, reducer } from './reducer';
+import {
+	contactsSelector,
+	totalCountSelector,
+	loadingSelector,
+	filtersSelector,
+	paginationSelector,
+	contactsCollection,
+} from './selectors';
 
 
 describe('Contacts', () => {
@@ -274,6 +283,52 @@ describe('Contacts', () => {
 			expect(
 				reducer({}, { type: OActionTypes.paginationSet, payload: { pagination: 42 } }),
 			).toEqual({ ...{}, pagination: 42 });
+		});
+	});
+
+	describe('selectors', () => {
+		it('contactsSelector should return totalCount', () => {
+			const state = { contacts: { contacts: ['test'] } };
+
+			expect(contactsSelector(state)).toEqual(state.contacts.contacts);
+		});
+
+		it('totalCountSelector should return totalCount', () => {
+			const state = { contacts: { totalCount: 10 } };
+
+			expect(totalCountSelector(state)).toEqual(state.contacts.totalCount);
+		});
+
+		it('loadingSelector should return totalCount', () => {
+			const state = { contacts: { loading: false } };
+
+			expect(loadingSelector(state)).toEqual(state.contacts.loading);
+		});
+
+		it('filtersSelector should return totalCount', () => {
+			const state = { contacts: { filters: { name: 'x' } } };
+
+			expect(filtersSelector(state)).toEqual(state.contacts.filters);
+		});
+
+		it('paginationSelector should return totalCount', () => {
+			const state = { contacts: { pagination: { limit: 10 } } };
+
+			expect(paginationSelector(state)).toEqual(state.contacts.pagination);
+		});
+
+		it('contactsCollection should return contacts with applied filters', () => {
+			const state = {
+				contacts: {
+					contacts: contacts,
+					filters: { name: 'a', gender: 'female', nat: 'GB', author: 'x' },
+				},
+			};
+			expect(contactsCollection(state)).toEqual([state.contacts.contacts[2]]);
+
+			const stateWithoutFilters = { ...state };
+			stateWithoutFilters.contacts.filters = {};
+			expect(contactsCollection(stateWithoutFilters)).toEqual(state.contacts.contacts);
 		});
 	});
 });

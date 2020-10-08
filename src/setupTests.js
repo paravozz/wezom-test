@@ -176,7 +176,8 @@ global.contacts = [
 			"medium":"https://randomuser.me/api/portraits/med/women/86.jpg",
 			"thumbnail":"https://randomuser.me/api/portraits/thumb/women/86.jpg"
 		},
-		"nat":"GB"
+		"nat":"GB",
+		"author":"x"
 	}
 ];
 
