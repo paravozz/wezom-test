@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import { View as TabularContacts } from './view.jsx';
+import { View as TabularContacts, renderDataSource } from './view.jsx';
 import { Table, Empty } from 'antd';
 
 
@@ -29,8 +29,9 @@ describe('TabularContacts', () => {
 
 	it('should render contacts tabular', () => {
 		component = setUp({ contacts });
-
 		expect((component.find(Empty))?.length).toBe(0);
-		expect((component.find(Table))?.length).toBe(1);
+
+		const renderedDataSource = renderDataSource(contacts);
+		expect(component.find(Table).props().dataSource).toEqual(renderedDataSource);
 	});
 });

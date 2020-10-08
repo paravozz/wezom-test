@@ -35,13 +35,6 @@ describe('TiledContacts', () => {
 		expect((component.find(Spin))?.length).toBe(1);
 	});
 
-	it('should render contacts tiled', () => {
-		component = setUp({ contacts });
-
-		expect((component.find(Empty))?.length).toBe(0);
-		expect((component.find(Card))?.length).toBe(contacts.length);
-	});
-
 	it('should paginate collection if pagination prop is provided', () => {
 		const pagination = { limit: 1, offset: 1 };
 		paginateCollection.mockReturnValue([contacts[1]]);
@@ -56,5 +49,12 @@ describe('TiledContacts', () => {
 		component = setUp({ contacts });
 
 		expect(paginateCollection).not.toBeCalled();
+	});
+
+	it('should render contacts tiled', () => {
+		component = setUp({ contacts });
+
+		expect((component.find(Empty))?.length).toBe(0);
+		expect((component.find(Card))?.length).toBe(contacts.length);
 	});
 });

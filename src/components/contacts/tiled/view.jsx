@@ -4,6 +4,87 @@ import { CountryData, getFullName, paginateCollection } from 'utils';
 import { Copyable } from 'components/utils';
 
 
+function renderFullName({ title, first, last }) {
+	return getFullName(title, first, last);
+}
+
+function renderAvatar(pictureUrl) {
+	return (
+		<img src={pictureUrl} alt="contact-cover" />
+	);
+}
+
+function renderBirthday({ age }) {
+	return `${age} years`
+}
+
+function renderEmail(email) {
+	return (
+		<Copyable text={email}>
+			<Typography.Link ellipsis href={`mailto:${email}`}>
+				{email}
+			</Typography.Link>
+		</Copyable>
+	);
+}
+
+function renderPhone(phone) {
+	return (
+		<Copyable text={phone}>
+			<Typography.Link ellipsis href={`tel:${phone}`}>
+				{phone}
+			</Typography.Link>
+		</Copyable>
+	);
+}
+
+function renderLocation({ country, street, city, state, postcode }) {
+	return (
+		<Copyable
+			text={(
+				`[${country}] `
+				+ `${street.number} ${street.name}, `
+				+ `${city}, ${state} ${postcode}`
+			)}
+		>
+			<Typography.Paragraph ellipsis={{ rows: 3 }}>
+				<strong>/{country}/</strong>
+				<br />
+				{(
+					`${street.number}, ${street.name}`
+					+ `${city}, ${state} ${postcode}`
+				)}
+			</Typography.Paragraph>
+		</Copyable>
+	);
+}
+
+function renderNationality(nat) {
+	return (
+		<Tag color={CountryData[nat].color}>{CountryData[nat].name}</Tag>
+	)
+}
+
+export function transformContacts(pagination, contacts) {
+	let baseCollection = (
+		pagination
+			? paginateCollection(contacts, pagination.offset, pagination.limit)
+			: contacts
+	);
+
+	return baseCollection.map((contact, index) => ({
+		key: index,
+		avatar: renderAvatar(contact.picture.large),
+		fullName: renderFullName(contact.name),
+		birthday: renderBirthday(contact.dob),
+		email: renderEmail(contact.email),
+		phone: renderPhone(contact.phone),
+		location: renderLocation(contact.location),
+		nationality: renderNationality(contact.nat),
+	}));
+}
+
+
 const View = (props) => {
 	const { contacts, loading, pagination } = props;
 
@@ -16,85 +97,9 @@ const View = (props) => {
 		)
 	}
 
-	function renderFullName({ title, first, last }) {
-		return getFullName(title, first, last);
-	}
-
-	function renderAvatar(pictureUrl) {
-		return (
-			<img src={pictureUrl} alt="contact-cover" />
-		);
-	}
-
-	function renderBirthday({ age }) {
-		return `${age} years`
-	}
-
-	function renderEmail(email) {
-		return (
-			<Copyable text={email}>
-				<Typography.Link ellipsis href={`mailto:${email}`}>
-					{email}
-				</Typography.Link>
-			</Copyable>
-		);
-	}
-
-	function renderPhone(phone) {
-		return (
-			<Copyable text={phone}>
-				<Typography.Link ellipsis href={`tel:${phone}`}>
-					{phone}
-				</Typography.Link>
-			</Copyable>
-		);
-	}
-
-	function renderLocation({ country, street, city, state, postcode }) {
-		return (
-			<Copyable
-				text={(
-					`[${country}] `
-					+ `${street.number} ${street.name}, `
-					+ `${city}, ${state} ${postcode}`
-				)}
-			>
-				<Typography.Paragraph ellipsis={{ rows: 3 }}>
-					<strong>/{country}/</strong>
-					<br />
-					{(
-						`${street.number}, ${street.name}`
-						+ `${city}, ${state} ${postcode}`
-					)}
-				</Typography.Paragraph>
-			</Copyable>
-		);
-	}
-
-	function renderNationality(nat) {
-		return (
-			<Tag color={CountryData[nat].color}>{CountryData[nat].name}</Tag>
-		)
-	}
-
-	const _contacts = (
-		pagination
-			? paginateCollection(contacts, pagination.offset, pagination.limit)
-			: contacts
-	).map((contact, index) => ({
-		key: index,
-		avatar: renderAvatar(contact.picture.large),
-		fullName: renderFullName(contact.name),
-		birthday: renderBirthday(contact.dob),
-		email: renderEmail(contact.email),
-		phone: renderPhone(contact.phone),
-		location: renderLocation(contact.location),
-		nationality: renderNationality(contact.nat),
-	}));
-
 	return (
 		<Row gutter={[8, 8]}>
-			{_contacts.map(contact => (
+			{transformContacts(pagination, contacts).map(contact => (
 				<div key={contact.key} style={{ width: '33.3333%', maxWidth: '33.3333%' }}>
 					<Col>
 						<Card

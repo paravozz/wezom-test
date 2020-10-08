@@ -31,6 +31,7 @@ const View = (props) => {
 						<Col xs={24} sm={10} lg={4}>
 							<Row>
 								<Select
+									id="genderSelect"
 									loading={loading}
 									style={{ width: '100%' }}
 									allowClear
@@ -50,6 +51,7 @@ const View = (props) => {
 						<Col xs={24} sm={14} lg={5}>
 							<Row>
 								<Select
+									id="natSelect"
 									loading={loading}
 									style={{ width: '100%' }}
 									mode="multiple"
