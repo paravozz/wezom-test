@@ -17,7 +17,7 @@ describe('TiledContacts', () => {
 		component = setUp();
 	});
 
-	it('should render without crashing', () => {
+	it('should render and match snapshot', () => {
 		component = setUpRendered({ contacts });
 		expect(component).toMatchSnapshot();
 	});
@@ -26,16 +26,16 @@ describe('TiledContacts', () => {
 		expect(component)
 	});
 
-	it('should contain Empty', () => {
+	it('should contain Empty component if rendered without props', () => {
 		expect((component.find(Empty))?.length).toBe(1);
 	});
 
-	it('should contain Spin if loading is true', () => {
+	it('should contain Spin component if loading is true', () => {
 		component = setUp({ loading: true });
 		expect((component.find(Spin))?.length).toBe(1);
 	});
 
-	it('should render contacts', () => {
+	it('should render contacts tiled', () => {
 		component = setUp({ contacts });
 
 		expect((component.find(Empty))?.length).toBe(0);

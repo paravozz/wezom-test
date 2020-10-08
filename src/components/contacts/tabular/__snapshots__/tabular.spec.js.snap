@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TabularContacts should render without crashing 1`] = `
+exports[`TabularContacts should render and match snapshot 1`] = `
 <div
   class="ant-table-wrapper"
 >

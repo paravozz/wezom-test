@@ -38,11 +38,11 @@ describe('Stats', () => {
 		expect(component)
 	});
 
-	it('should contain if no props provided Row', () => {
+	it('should contain Row component if no props provided', () => {
 		expect((component.find(Row))?.length).toBe(1);
 	});
 
-	it('should call calculation functions', () => {
+	it('should call all calculation functions in render cycle', () => {
 		component = setUp({ contacts });
 
 		expect(countGenders).toBeCalled();

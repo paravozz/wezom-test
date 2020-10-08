@@ -15,8 +15,8 @@ export const OActionTypes = {
 };
 
 
-export const fetchContacts = (count, seed) => (
-	createAction(OActionTypes.fetchContactsRequested)({ count, seed })
+export const fetchContacts = (count) => (
+	createAction(OActionTypes.fetchContactsRequested)({ count })
 );
 
 export const filterContacts = (filters) => (

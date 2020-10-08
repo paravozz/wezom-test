@@ -12,7 +12,7 @@ import {
 
 describe('Utils:', () => {
 	describe('countGenders', () => {
-		test('should count correctly', () => {
+		it('should count correctly', () => {
 			const modifiedContacts = [...contacts];
 			modifiedContacts[modifiedContacts.length - 1].gender = undefined;
 
@@ -23,7 +23,7 @@ describe('Utils:', () => {
 			});
 		});
 
-		test('should return zeros for empty list', () => {
+		it('should return zeros for empty list', () => {
 			expect(countGenders([])).toEqual({
 				male: 0,
 				female: 0,
@@ -33,7 +33,7 @@ describe('Utils:', () => {
 	});
 
 	describe('mapGenderToItsName', () => {
-		test('should contain correct data', () => {
+		it('should contain correct data', () => {
 			expect(mapGenderToItsName).toEqual({
 				male: 'Men',
 				female: 'Women',
@@ -43,11 +43,11 @@ describe('Utils:', () => {
 	});
 
 	describe('getGenderName', () => {
-		test('should map to indeterminate if no value passed', () => {
+		it('should map to indeterminate if no value passed', () => {
 			expect(getGenderName(undefined)).toEqual(mapGenderToItsName.indeterminate);
 		});
 
-		test('should map to proper name', () => {
+		it('should map to proper name', () => {
 			expect(getGenderName('female')).toEqual(mapGenderToItsName['female']);
 		});
 	});
@@ -55,7 +55,7 @@ describe('Utils:', () => {
 	describe('getGenderPredominateMessage', () => {
 		let genderStats = countGenders(contacts);
 
-		test('should return valid message', () => {
+		it('should return valid message', () => {
 			const genderName = getGenderName('female');
 
 			expect(getGenderPredominateMessage(genderStats)).toEqual(`${genderName} predominate`);
@@ -63,7 +63,7 @@ describe('Utils:', () => {
 	});
 
 	describe('countNationalities', () => {
-		test('should return correct data', () => {
+		it('should return correct data', () => {
 			expect(countNationalities(contacts)).toEqual({
 				NZ: 1,
 				GB: 1,
@@ -82,14 +82,14 @@ describe('Utils:', () => {
 	});
 
 	describe('getFullName', () => {
-		test('should return correct data', () => {
+		it('should return correct data', () => {
 			const contactName = contacts[0].name;
 			expect(getFullName(contactName.title, contactName.first, contactName.last)).toBe('Mrs Hazel Chen');
 		})
 	});
 
 	describe('paginateCollection', () => {
-		test('should slice correct amount of data', () => {
+		it('should slice correct amount of data', () => {
 			expect(paginateCollection(contacts, 1, 1)).toEqual([contacts[1]])
 		})
 	})

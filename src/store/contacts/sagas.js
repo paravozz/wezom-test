@@ -6,11 +6,11 @@ import { notification } from 'antd';
 import { OActionTypes } from './actions';
 
 
-function* fetchContacts(action) {
-	const { count, seed } = action.payload;
+export function* fetchContacts(action) {
+	const { count } = action.payload;
 
 	try {
-		const { data, count: resultsCount } = yield call(Api.fetchContacts, count, seed);
+		const { data, count: resultsCount } = yield call(Api.fetchContacts, count);
 
 		yield put({
 			type: OActionTypes.fetchContactsSucceed,
@@ -37,7 +37,7 @@ export function* contactsWatcher() {
 }
 
 
-function* changeFilters(action) {
+export function* changeFilters(action) {
 	yield put({
 		type: (
 			action.payload.filters
@@ -53,7 +53,7 @@ export function* filtersWatcher() {
 }
 
 
-function* setPagination(action) {
+export function* setPagination(action) {
 	yield put({
 		type: OActionTypes.paginationSet,
 		payload: action.payload,

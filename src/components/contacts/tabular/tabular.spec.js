@@ -14,7 +14,7 @@ describe('TabularContacts', () => {
 		component = setUp();
 	});
 
-	it('should render without crashing', () => {
+	it('should render and match snapshot', () => {
 		component = setUpRendered({ contacts });
 		expect(component).toMatchSnapshot();
 	});
@@ -23,11 +23,11 @@ describe('TabularContacts', () => {
 		expect(component)
 	});
 
-	it('should contain Empty', () => {
+	it('should contain Empty component if rendered without props', () => {
 		expect((component.find(Empty))?.length).toBe(1);
 	});
 
-	it('should render contacts', () => {
+	it('should render contacts tabular', () => {
 		component = setUp({ contacts });
 
 		expect((component.find(Empty))?.length).toBe(0);

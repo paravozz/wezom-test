@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React from 'react';
 import { View as Filters } from './view.jsx';
-import { Row } from 'antd';
 
 
 const setUp = (props) => shallow(<Filters {...props} />);
