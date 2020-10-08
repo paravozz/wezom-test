@@ -1,5 +1,7 @@
 # Available Scripts
 
+## Run project
+### `npm run start`
 
 ## Dev-server + Tests
 ### `npm run test-with-dev-server`
@@ -12,4 +14,3 @@ for changes watching and coverage
 
 ## Just dev-server
 ### `npm run dev-server`
-
